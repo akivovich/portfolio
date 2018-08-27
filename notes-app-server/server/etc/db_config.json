@@ -1,0 +1,10 @@
+{
+    "server": "localhost\\SQLEXPRESS01", 
+    "port": 1235,
+    "database": "projecteam",
+    "user": "admin",
+    "password": "admin",
+    "options": {
+        "encrypt": true
+    }
+}
