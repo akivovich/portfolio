@@ -20,7 +20,7 @@ class AppStore extends EventEmitter {
         this._notes = [];
         this._loadingError = null;
         this._isLoading = false;
-        AppDispatcher.register(action => this.performanAction(action));
+        AppDispatcher.register(action => this.performAction(action));
     }
     formatNote(data) {
         return {
@@ -48,7 +48,7 @@ class AppStore extends EventEmitter {
     removeChangeListener(callback) {
         this.removeListener(CHANGE_EVENT, callback);
     }
-    performanAction(action) {
+    performAction(action) {
         switch (action.type) {
             case appConstants.LOAD_NOTES_REQUEST:
                 console.log('store:LOAD_NOTES_REQUEST');
